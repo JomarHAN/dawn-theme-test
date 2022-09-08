@@ -1,0 +1,46 @@
+<style>
+    .test{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: fit-content;
+        flex-direction: column;
+    }
+</style>
+
+<div class="test">
+    <h3>{{product.title}}</h3>
+    <img src="{{product.featured_image | img_url: "300x"}}" alt="">
+    {% if section.settings.show_rating %}
+        <div>⭐️⭐️⭐️⭐️⭐️</div>
+    {% endif %}
+    <div>
+        {{ section.settings.tax_field }}
+    </div>
+    <div>
+        {{ section.settings.shipping_field }}
+    </div>
+</div>
+
+{% schema %}
+{
+   "name": "Editor Main Product Test",
+  "settings": [
+    {
+       "type": "text",
+       "label": "Tax",
+       "id": "tax_field"
+    },
+    {
+       "type": "text",
+       "label": "Shipping",
+       "id": "shipping_field"
+    },
+    {
+       "type": "checkbox",
+       "label": "Show Rating",
+       "id": "show_rating"
+    }
+  ]
+}
+{% endschema %}

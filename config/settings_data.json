@@ -189,6 +189,14 @@
         "settings": {
           "color_scheme": "background-1"
         }
+      },
+      "main-product-test": {
+        "type": "main-product-test",
+        "settings": {
+          "tax_field": "Excluded 5% tax",
+          "shipping_field": "Within 3-4 days",
+          "show_rating": true
+        }
       }
     },
     "content_for_index": []

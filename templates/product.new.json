@@ -1,0 +1,60 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product-test",
+      "settings": {
+        "tax_field": "Excluded 10%",
+        "shipping_field": "Within a month",
+        "show_rating": true
+      }
+    },
+    "1662620308abf6477d": {
+      "type": "image-with-text",
+      "blocks": {
+        "1662620308df9a4a65-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image with text",
+            "heading_size": "h1"
+          }
+        },
+        "1662620308df9a4a65-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Test Coffee Machines<\/p>",
+            "text_style": "body"
+          }
+        },
+        "1662620308df9a4a65-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "1662620308df9a4a65-0",
+        "1662620308df9a4a65-1",
+        "1662620308df9a4a65-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/about_3.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1662620308abf6477d"
+  ]
+}
