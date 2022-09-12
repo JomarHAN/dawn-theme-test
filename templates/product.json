@@ -43,10 +43,12 @@
         },
         "description": {
           "type": "description",
+          "disabled": true,
           "settings": {}
         },
         "collapsible-row-0": {
           "type": "collapsible_tab",
+          "disabled": true,
           "settings": {
             "heading": "Materials",
             "icon": "leather",
@@ -56,6 +58,7 @@
         },
         "collapsible-row-1": {
           "type": "collapsible_tab",
+          "disabled": true,
           "settings": {
             "heading": "Shipping & Returns",
             "icon": "truck",
@@ -65,6 +68,7 @@
         },
         "collapsible-row-2": {
           "type": "collapsible_tab",
+          "disabled": true,
           "settings": {
             "heading": "Dimensions",
             "icon": "ruler",
@@ -74,6 +78,7 @@
         },
         "collapsible-row-3": {
           "type": "collapsible_tab",
+          "disabled": true,
           "settings": {
             "heading": "Care Instructions",
             "icon": "heart",
@@ -83,6 +88,7 @@
         },
         "share": {
           "type": "share",
+          "disabled": true,
           "settings": {
             "share_label": "Share"
           }
@@ -114,57 +120,34 @@
         "padding_bottom": 12
       }
     },
-    "image-with-text": {
-      "type": "image-with-text",
-      "blocks": {
-        "image-with-text-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "Image with text",
-            "heading_size": "h1"
-          }
-        },
-        "image-with-text-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "text_style": "body"
-          }
-        }
-      },
-      "block_order": [
-        "image-with-text-0",
-        "image-with-text-1"
-      ],
-      "settings": {
-        "height": "small",
-        "desktop_image_width": "medium",
-        "layout": "text_first",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "color_scheme": "background-2",
-        "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "multicolumn": {
+    "1662975444a8368467": {
       "type": "multicolumn",
       "blocks": {
-        "column-0": {
+        "16629754446a975f26-0": {
           "type": "column",
           "settings": {
-            "title": "Free Shipping",
+            "image": "shopify:\/\/shop_images\/farmer.png",
+            "title": "Direct Relations to Farmers",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
             "link_label": "",
             "link": ""
           }
         },
-        "column-1": {
+        "16629754446a975f26-1": {
           "type": "column",
           "settings": {
-            "title": "Hassle-Free Exchanges",
+            "image": "shopify:\/\/shop_images\/coffee-plant.png",
+            "title": "Plant a Tree for 3rd order",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "16629754446a975f26-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/roaster.png",
+            "title": "Roasted by Hand in Florida",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
             "link_label": "",
             "link": ""
@@ -172,17 +155,18 @@
         }
       },
       "block_order": [
-        "column-0",
-        "column-1"
+        "16629754446a975f26-0",
+        "16629754446a975f26-1",
+        "16629754446a975f26-2"
       ],
       "settings": {
-        "title": "",
+        "title": "Our Promise ⭐️",
         "heading_size": "h1",
-        "image_width": "full",
+        "image_width": "third",
         "image_ratio": "adapt",
-        "columns_desktop": 2,
-        "column_alignment": "left",
-        "background_style": "none",
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "background_style": "primary",
         "button_label": "",
         "button_link": "",
         "color_scheme": "background-1",
@@ -192,27 +176,38 @@
         "padding_bottom": 36
       }
     },
-    "product-recommendations": {
-      "type": "product-recommendations",
+
+    "1662978916e519c1b9": {
+      "type": "featured-collection",
       "settings": {
-        "heading": "You may also like",
-        "heading_size": "h2",
+        "title": "You may also like",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "coffee",
+        "products_to_show": 6,
         "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
         "color_scheme": "background-1",
-        "image_ratio": "square",
-        "show_secondary_image": true,
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
         "show_vendor": false,
         "show_rating": false,
+        "enable_quick_add": false,
         "columns_mobile": "2",
+        "swipe_on_mobile": false,
         "padding_top": 36,
-        "padding_bottom": 28
+        "padding_bottom": 36
       }
     }
   },
   "order": [
     "main",
-    "image-with-text",
-    "multicolumn",
-    "product-recommendations"
+    "1662975444a8368467",
+    "1662978916e519c1b9"
   ]
 }
