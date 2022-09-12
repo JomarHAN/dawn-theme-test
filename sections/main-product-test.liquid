@@ -14,12 +14,20 @@
     {% if section.settings.show_rating %}
         <div>⭐️⭐️⭐️⭐️⭐️</div>
     {% endif %}
-    <div>
-        {{ section.settings.tax_field }}
-    </div>
-    <div>
-        {{ section.settings.shipping_field }}
-    </div>
+
+    {% for block in section.blocks %}
+        {% case block.type %}
+            {% when 'tax_block' %}
+                <div>
+                    {{block.settings.tax_input}}
+                </div>
+            {% when 'shipping_block' %}
+               <div>
+                {{block.settings.shipping_input}}
+               </div>
+        {% endcase %}
+    {% endfor %}
+
 </div>
 
 {% schema %}
@@ -27,19 +35,35 @@
    "name": "Editor Main Product Test",
   "settings": [
     {
-       "type": "text",
-       "label": "Tax",
-       "id": "tax_field"
-    },
-    {
-       "type": "text",
-       "label": "Shipping",
-       "id": "shipping_field"
-    },
-    {
        "type": "checkbox",
        "label": "Show Rating",
        "id": "show_rating"
+    }
+  ],
+  "blocks":[
+    {
+       "type": "tax_block",
+       "name": "Tax Block",
+       "limit": 1,
+      "settings": [
+        {
+           "type": "text",
+           "label": "Tax Label",
+           "id": "tax_input"
+        }
+      ] 
+    },
+    {
+       "type": "shipping_block",
+      "name": "Shipping Block",
+      "limit": 1,
+     "settings": [
+        {
+           "type": "text",
+           "label": "Shipping Label",
+           "id": "shipping_input"
+        }
+     ]
     }
   ]
 }

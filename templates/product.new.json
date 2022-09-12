@@ -2,9 +2,25 @@
   "sections": {
     "main": {
       "type": "main-product-test",
+      "blocks": {
+        "575b09b2-9164-4260-a1d9-437991c3356d": {
+          "type": "tax_block",
+          "settings": {
+            "tax_input": "Included Tax 5%"
+          }
+        },
+        "0a89fa47-8d8c-46aa-880d-2cfb5ca46bc2": {
+          "type": "shipping_block",
+          "settings": {
+            "shipping_input": "1-2 Week(s)"
+          }
+        }
+      },
+      "block_order": [
+        "575b09b2-9164-4260-a1d9-437991c3356d",
+        "0a89fa47-8d8c-46aa-880d-2cfb5ca46bc2"
+      ],
       "settings": {
-        "tax_field": "Excluded 10%",
-        "shipping_field": "Within a month",
         "show_rating": true
       }
     },
