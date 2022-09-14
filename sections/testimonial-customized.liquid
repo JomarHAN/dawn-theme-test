@@ -1,0 +1,141 @@
+<style>
+    .testy_card{
+        box-shadow: 0 0 5px 0px gray;
+        padding: 30px;
+        margin: 30px;
+        max-width: 350px;
+    }
+
+    .testy_icon{
+        display: flex;
+    }
+
+    .testy_icon svg{
+        height: 50px;
+        margin: auto;
+        width: 50px;
+    }
+
+    .testy_word{
+        text-align: center;
+    }
+
+    .testy_image{
+        display: flex;
+        justify-content: center;
+        margin: 10px;
+    }
+    .testy_image img{
+        border-radius: 50%;
+        width: 45%;
+    }
+
+    .testy_name{
+        text-align: center;
+        font-weight: bold;
+    }
+</style>
+
+<div class="page-width">
+
+    <h1>{{section.settings.slider_header}}</h1>
+
+    <div class="testy_container slider multiple-items">
+        {% for block in section.blocks %}
+            
+            <div class="testy_card">
+                <div class="testy_icon">
+                    {% render 'icon-quotes' %}
+                </div>
+                <div class="testy_word">
+                    <p>{{block.settings.testify_words}}</p>
+                </div>
+                <div class="testy_image">
+                    <img src="{{ block.settings.customer_image | img_url: 'medium' }}" />
+                </div>
+                <div class="testy_name">{{block.settings.customer_name}}</div>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+<!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+
+<script type="text/javascript">
+    $(document).ready(function(){
+
+        $('.testy_container').slick({
+            infinite: false,
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            dots: true,
+            arrows: false,
+            responsive: [
+                {
+                    breakpoint: 989,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2,
+                        infinite: true,
+                        dots: true
+                    }
+                },
+                {
+                    breakpoint: 750,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+            ]
+        })
+    })
+    
+</script>
+
+{% schema %}
+{
+   "name": "Testimonial Slider",
+  "settings": [
+    {
+       "type": "text",
+       "label": "Slider header",
+       "id": "slider_header"
+    }
+  ],
+   "blocks": [
+        {
+           "type": "testify",
+           "name": "Customer Testify",
+           "settings": [
+                {
+                    "type": "richtext",
+                    "label": "Testify Words",
+                    "id": "testify_words"
+                },
+                {
+                    "type": "image_picker",
+                    "label": "Customer Image",
+                    "id": "customer_image"
+                },
+                {
+                    "type": "text",
+                    "label": "Customer Name",
+                    "id": "customer_name"
+                }
+            ]
+        }
+   ],
+  "presets": [
+    {
+        "name":"Testimonial Slider"
+    }
+  ]
+
+}
+{% endschema %}

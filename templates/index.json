@@ -189,6 +189,52 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "1663136676121842ed": {
+      "type": "testimonial-customized",
+      "blocks": {
+        "06e6035f-820e-40ae-8796-e954fd250ac8": {
+          "type": "testify",
+          "settings": {
+            "testify_words": "<p>\"it was so great\"<\/p>",
+            "customer_image": "shopify:\/\/shop_images\/roaster.png",
+            "customer_name": "Coffee Machine"
+          }
+        },
+        "439656fb-87de-4fec-9e90-3b5f1836c2fc": {
+          "type": "testify",
+          "settings": {
+            "testify_words": "<p>\"Best than ever\"<\/p>",
+            "customer_image": "shopify:\/\/shop_images\/farmer.png",
+            "customer_name": "Farmer"
+          }
+        },
+        "f1b3f612-1b2e-4575-9621-5fa92f633149": {
+          "type": "testify",
+          "settings": {
+            "testify_words": "<p>\"So Cool!\"<\/p>",
+            "customer_image": "shopify:\/\/shop_images\/coffee-plant.png",
+            "customer_name": "Lemon Tree"
+          }
+        },
+        "bab96cac-630a-410c-86a7-e45557199d48": {
+          "type": "testify",
+          "settings": {
+            "testify_words": "<p>\"Good\"<\/p>",
+            "customer_image": "shopify:\/\/shop_images\/coffee-plant.png",
+            "customer_name": "Apple Tree"
+          }
+        }
+      },
+      "block_order": [
+        "06e6035f-820e-40ae-8796-e954fd250ac8",
+        "439656fb-87de-4fec-9e90-3b5f1836c2fc",
+        "f1b3f612-1b2e-4575-9621-5fa92f633149",
+        "bab96cac-630a-410c-86a7-e45557199d48"
+      ],
+      "settings": {
+        "slider_header": "Customer said"
+      }
     }
   },
   "order": [
@@ -197,6 +243,7 @@
     "1661574442c102efd0",
     "166157459063e1f840",
     "1662357669f5affe41",
-    "16623578511c4ecb4a"
+    "16623578511c4ecb4a",
+    "1663136676121842ed"
   ]
 }
